@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "prefer-arrow-callback": "error" ,
+    "semi": "error",
+    "prefer-template": "error",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-else-return": [
+      "error",
+      {
+        "allowElseIf": true
+      }
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error",
+          "log"
+        ]
+      }
+    ],
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "tasks/**"
+        ],
+        "optionalDependencies": false
+      }
+    ]
+  }
+}
